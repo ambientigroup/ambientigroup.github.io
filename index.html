@@ -97,33 +97,26 @@
 }
 
 .open-a {
-  display: inline-block;
-  width: 20px;
-  height: 28px;
   position: relative;
-  vertical-align: -2px;
+  display: inline-block;
+  width: 22px;
+  height: 28px;
   margin-right: 1px;
-}
-
-.open-a::before,
-.open-a::after {
-  content: "";
-  position: absolute;
-  top: 1px;
-  width: 2px;
-  height: 29px;
-  background: #252238;
-  transform-origin: top center;
+  vertical-align: -2px;
+  color: transparent;
 }
 
 .open-a::before {
-  left: 9px;
-  transform: rotate(20deg);
-}
-
-.open-a::after {
-  right: 9px;
-  transform: rotate(-20deg);
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0;
+  width: 16px;
+  height: 27px;
+  border-left: 2px solid #252238;
+  border-right: 2px solid #252238;
+  transform: perspective(20px) rotateX(-5deg);
+  clip-path: polygon(50% 0, 100% 100%, 88% 100%, 50% 13%, 12% 100%, 0 100%);
 }
     
     .logo-sub {
