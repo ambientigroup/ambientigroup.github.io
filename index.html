@@ -97,36 +97,35 @@
 }
 
 .open-a {
-    position: relative;
-    display: inline-block;
-    color: transparent;
-    width: 20px;
-    height: 28px;
-    vertical-align: -2px;
+  display: inline-block;
+  width: 20px;
+  height: 28px;
+  position: relative;
+  vertical-align: -2px;
+  margin-right: 1px;
 }
 
 .open-a::before,
 .open-a::after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    width: 2px;
-    height: 26px;
-    background: #252238;
+  content: "";
+  position: absolute;
+  top: 1px;
+  width: 2px;
+  height: 29px;
+  background: #252238;
+  transform-origin: top center;
 }
 
 .open-a::before {
-    left: 5px;
-    transform: rotate(25deg);
-    transform-origin: bottom;
+  left: 9px;
+  transform: rotate(20deg);
 }
 
 .open-a::after {
-    right: 5px;
-    transform: rotate(-25deg);
-    transform-origin: bottom;
+  right: 9px;
+  transform: rotate(-20deg);
 }
-
+    
     .logo-sub {
       margin-top: 5px;
       font-size: 11px;
