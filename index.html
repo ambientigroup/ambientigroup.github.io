@@ -90,11 +90,40 @@
       line-height: 1;
     }
 
-    .logo-main {
-      font-size: 28px;
-      letter-spacing: 3px;
-      font-weight: 500;
-    }
+   .logo-main {
+    font-size: 28px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.open-a {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    width: 20px;
+}
+
+.open-a::before,
+.open-a::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    width: 2px;
+    height: 28px;
+    background: #252238;
+}
+
+.open-a::before {
+    left: 5px;
+    transform: rotate(25deg);
+    transform-origin: bottom;
+}
+
+.open-a::after {
+    right: 5px;
+    transform: rotate(-25deg);
+    transform-origin: bottom;
+}
 
     .logo-sub {
       margin-top: 5px;
@@ -726,7 +755,7 @@
   <div class="container nav">
 
     <a href="#home" class="logo">
-      <span class="logo-main">AMBIÉNTI</span>
+      <span class="logo-main"><span class="open-a">A</span>MBIÉNTI</span>
       <span class="logo-sub">GROUP</span>
     </a>
 
