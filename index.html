@@ -561,6 +561,79 @@
       font-weight: 800;
     }
 
+
+/* M.O.N.A. Signature Philosophy */
+.mona-philosophy {
+  margin-top: 32px;
+  padding: 28px 16px;
+  background: linear-gradient(145deg, #fff7fb, #ffffff 65%, #fff4ec);
+  border: 1px solid rgba(232, 36, 130, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(40, 22, 70, 0.07);
+}
+
+.mona-heading {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #25213f;
+  margin-bottom: 24px;
+}
+
+.mona-pillars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 12px;
+}
+
+.mona-pillars > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+}
+
+.mona-pillars strong {
+  font-family: Georgia, serif;
+  font-size: 44px;
+  line-height: 1;
+  background: linear-gradient(135deg, #7208bd, #ff1687, #ff8017);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mona-pillars span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #25213f;
+  overflow-wrap: anywhere;
+}
+
+.mona-quote {
+  margin: 24px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(114, 8, 189, 0.14);
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.7;
+  color: #62536d;
+}
+
+@media (max-width: 600px) {
+  .mona-philosophy {
+    margin-top: 24px;
+    padding: 24px 14px;
+  }
+
+  .mona-pillars strong {
+    font-size: 40px;
+  }
+}
+
+    
     .about-copy {
       border-left: 2px solid #ded8e4;
       padding-left: 40px;
@@ -1007,6 +1080,24 @@ On the next screen, click the 90-Minute Business Assessment to select your appoi
           Ambiénti Group
         </div>
 
+
+<div class="mona-philosophy">
+  <div class="mona-heading">THE M.O.N.A. PHILOSOPHY</div>
+
+  <div class="mona-pillars">
+    <div><strong>M</strong><span>Management</span></div>
+    <div><strong>O</strong><span>Optimization</span></div>
+    <div><strong>N</strong><span>Navigation</span></div>
+    <div><strong>A</strong><span>Advancement</span></div>
+  </div>
+
+  <p class="mona-quote">
+    Bringing clarity to complexity and turning
+    possibilities into progress.
+  </p>
+</div>
+
+        
       </div>
 
 
